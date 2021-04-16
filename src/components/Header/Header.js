@@ -23,17 +23,17 @@ const HEADER_ITEMS = [
             {
                 title: "About",
                
-                path: "/about"
+                path: "/"
             },
             {
                 title: "Approach",
                 
-                path: "/approach"
+                path: "/"
             },
             {
                 title: "Outsource",
                
-                path: "/outsource"
+                path: "/"
             }
         ]
     },

@@ -157,10 +157,10 @@ export default function Outsource(){
                                     We are<br />
                                     your <br />
                                     on Demand<br />
-                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Web</motion.div>
-                                    <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Product</motion.div>
-                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Creative</motion.div>
-                                    <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div>
+                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
+                                    <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Engineers</motion.div>
+                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div>
+                                    {/* <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div> */}
                                     <div className="home-span text-white">{" "}<Cursor /></div>
                                     <div className="text-white">Team</div>
                                 </h1>
@@ -169,10 +169,10 @@ export default function Outsource(){
                                 <h1 data-aos="fade-up" className="text-white home-heading">
                                     We are<br />
                                     your on Demand<br />
-                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Web</motion.div>
-                                    <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Product</motion.div>
-                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Creative</motion.div>
-                                    <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div>
+                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
+                                    <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Engineers</motion.div>
+                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div>
+                                    {/* <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div> */}
                                     <div className="home-span text-white">{" "}<Cursor />Team</div>
                                 </h1>
                             </div>
@@ -206,7 +206,7 @@ export default function Outsource(){
                                         Product design
                                     </div>
                                     <div data-aos="fade-right" data-aos-delay={400} className="heading-thin font-18 text-muted py-3">
-                                        We work with startups and brands to create amazing MVPs, app prototypes and custom apps. Pair with our expert product designers for a user centric product.
+                                        We work with startups and brands to create amazing CNN Models,  prototypes and custom apps. Pair with our expert product designers for a user centric Result.
                                     </div>
                                     <div data-aos="fade-right" data-aos-delay={800} className="text-muted">
                                         <div className="grey-dash"></div> Corporate Design, Logo Design, Professional Motion Graphics, Product label Design
@@ -227,7 +227,7 @@ export default function Outsource(){
                             </div>
                         </div>
                     </div>
-                    <Transition key={1} height="100px" from="#000000" to="#ffffff" />
+                    {/* <Transition key={1} height="100px" from="#000000" to="#ffffff" />
                     <div className="mini-hero-container container-lg text-black">
                         <div className="py-3 py-lg-5">
                             <div className="row no-gutters align-items-center">
@@ -256,8 +256,8 @@ export default function Outsource(){
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <Transition key={2} height="100px" from="#ffffff" to="#000000" />
+                    </div> */}
+                    {/* <Transition key={1} height="100px" from="#ffffff" to="#000000" />
                     <div className="mini-hero-container container-lg">
                         <div className="py-3 py-lg-5">
                             <div className="row no-gutters align-items-center">
@@ -286,7 +286,7 @@ export default function Outsource(){
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <Transition key={3} height="100px" from="#000000" to="#ffffff" />
                     <div className="mini-hero-container container-lg text-black">
                         <div className="py-3 py-lg-5">
@@ -323,13 +323,13 @@ export default function Outsource(){
                             <div style={{maxWidth: "1000px"}}>
                                 <div className="font-3 heading">
                                     Inspiring the<br />
-                                    <span style={{color: PRIMARY_DARK}}>remote working culture</span>
+                                    <span style={{color: PRIMARY_DARK}}>remote working culture in Medical Field</span>
                                 </div>
                                 <div className="py-3 py-lg-5 font-2 heading-thin">
-                                    Here at Spirited.AI we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
+                                    Here at Spirited.AI we are making read reports without doctors possible. All you need is laptop, Wi-Fi and sheer dedication towards our Spirited.AI
                                 </div>
                                 <div className="heading font-15">
-                                    The future of work is here
+                                    The future of Radiology is here
                                 </div>
                                 <div className="pt-3">
                                     <div style={{fontFamily: "madetommy-bold"}}>
@@ -352,7 +352,7 @@ export default function Outsource(){
                                     <FaQuoteLeft size="76" color={PRIMARY_DARK} />
                                 </div>
                                 <div className="py-3 py-lg-5 font-18">
-                                    Here at Spirited.AI we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
+                                    Here at Spirited.AI we are providing results at Home. All you need is Internet and report is in your hand
                                 </div>
                             </div>
                         </div>

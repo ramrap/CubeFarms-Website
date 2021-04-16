@@ -44,15 +44,15 @@ const footerData = [
         content:[
             {
                 label: "About Us",
-                link: "/about"
+                link: "/"
             },
             {
                 label: "Approach",
-                link: "/approach"
+                link: "/"
             },
             {
                 label: "Outsource",
-                link: "/outsource"
+                link: "/"
             },
         ]
     },
@@ -60,28 +60,28 @@ const footerData = [
         title: "Services",
         content:[
             {
-                label: "service1",
-                link: "/service1"
+                label: "Upload Imgage For Test Results",
+                link: "/upload"
             },
             {
                 label: "service2",
-                link: "/service2"
+                link: "/"
             },
             {
                 label: "service3",
-                link: "/service3"
+                link: "/"
             },
            
         ]
     },
     {
         title: "Join Us",
-        link: "/joinus",
+        link: "#JoinUs",
         content:[]
     },
     {
         title: "Contact",
-        link: "/contact",
+        link: "#contactUs",
         content:[]
     },
 ]

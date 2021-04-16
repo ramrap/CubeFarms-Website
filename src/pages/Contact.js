@@ -12,7 +12,7 @@ export default function Contact() {
     const [ email, setEmail ] = React.useState("")
     const [ msg, setMsg ] = React.useState("")
     return(
-        <Layout header={{full: true, black: true}}>
+     
             <Container>
                 <div className="py-10 px-2 px-lg-5">
                     <div className="row no-gutters justify-content-between py-1 py-lg-5 px-2 px-lg-5">
@@ -76,7 +76,7 @@ export default function Contact() {
                                     </div>
                                     <div className="col-12 col-md-3 mb-4 mb-lg-0">
                                         <h3 className="mb-3">
-                                            Join Cubefarms
+                                            Join Spirited.AI
                                         </h3>
                                         <p>
                                             We have some open positions for you!
@@ -92,7 +92,7 @@ export default function Contact() {
                                             Anything else
                                         </h3>
                                         <p>
-                                            contact@cubefarms.com<br />
+                                            contact@spirited.com<br />
                                             +91-324324234234
                                         </p>
                                     </div>
@@ -102,6 +102,6 @@ export default function Contact() {
                     </div>
                 </div>
             </Container>
-        </Layout>
+ 
     )
 }

@@ -60,31 +60,23 @@ const footerData = [
         title: "Services",
         content:[
             {
-                label: "Product Design",
-                link: "/product"
+                label: "service1",
+                link: "/service1"
             },
             {
-                label: "Web Studio",
-                link: "/web"
+                label: "service2",
+                link: "/service2"
             },
             {
-                label: "Creative Studio",
-                link: "/design"
+                label: "service3",
+                link: "/service3"
             },
-            {
-                label: "Digital Advertising",
-                link: "/advertising"
-            },
+           
         ]
     },
     {
         title: "Join Us",
         link: "/joinus",
-        content:[]
-    },
-    {
-        title: "Blog",
-        link: "/blog",
         content:[]
     },
     {
@@ -101,7 +93,7 @@ export default function Footer(props){
                 <div className="col-12 col-md-4">
                     <div className="heading font-15">
                         <div>
-                            <img src={logoBlack} alt="Cubefarms" /><br />
+                            <h2>Spirited.ai</h2>
                         </div>
                         <div>
                             Got a new idea? Let's talk

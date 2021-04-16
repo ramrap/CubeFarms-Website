@@ -7,6 +7,8 @@ import { RiMenu3Line } from 'react-icons/ri'
 import { MdClose } from 'react-icons/md'
 import { Collapse } from 'react-bootstrap'
 import SingleArrowButton from '../Buttons/SingleArrowButton'
+import { useAuth } from "../../context/auth";
+import { loadFirebase } from "../../context/firebase";
 
 import { motion } from 'framer-motion'
 import { useScrollPosition } from '../../utils/scrollDirection'
@@ -20,45 +22,36 @@ const HEADER_ITEMS = [
         items: [
             {
                 title: "About",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
+               
                 path: "/about"
             },
             {
                 title: "Approach",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
+                
                 path: "/approach"
             },
             {
                 title: "Outsource",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
+               
                 path: "/outsource"
             }
         ]
     },
     {
-        title: "Services",
+        title: "CheckUps",
         dropdown: true,
         items: [
             {
-                title: "Web",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
-                path: "/web"
+                title: "CheckUp1",
+               
+                path: "/"
             },
             {
-                title: "Product",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
-                path: "/product"
+                title: "CheckUp2",
+                
+                path: "/t"
             },
-            {
-                title: "Creative",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
-                path: "/creative"
-            },
-            {
-                title: "Advertising",
-                content: "Lorem ipsum lorem ipsum lorem ipsum really lorem ipsum",
-                path: "/advertising"
-            },
+            
         ]
     },
     {
@@ -66,17 +59,14 @@ const HEADER_ITEMS = [
         path: "/joinus"
     },
     {
-        title: "Blog",
-        path: "/blog"
-    },
-    {
         title: "Contact",
         path: "/contact"
     },
     {
-        title: "Price Estimate",
+        
         button: true
     }
+
 ]
 
 const Container = styled.div`
@@ -218,6 +208,36 @@ export default function Header(props){
     const [ mobileNav, setMobileNav ] = React.useState(false)
     const [ mobileDropdown, setMobileDropdown ] = React.useState("")
     const [ navHidden, setNavHidden ] = React.useState(false)
+
+    const {  firebaseUser, setFirebaseUser, token, setToken, loading } = useAuth()
+    const handleSignIn = async () => {
+      let firebase = await loadFirebase();
+      var provider = new firebase.auth.GoogleAuthProvider();
+      provider.addScope('email');
+      provider.addScope('profile');
+      firebase.auth().signInWithPopup(provider)
+        .then(() => {
+          console.log("login success =>", provider)
+          setToken(true)
+          console.log(token)
+        })
+        .catch(err => {
+          alert('Error Processing request, try again.');
+          console.log(err);
+        });
+    }
+    const handleLogout = async () => {
+      var firebase = await loadFirebase();
+      firebase.auth().signOut().then(function () {
+        setFirebaseUser(null)
+        setToken(null)
+        // delete axiosInstance.defaults.headers.common['Authentication']
+      }).catch(function (err) {
+        alert('Error Processing request, try again.');
+        console.log(err);
+      });
+    }
+
     useScrollPosition(({ prevPos, currPos }) => {
         const isShow = currPos.y > prevPos.y
         if (isShow === navHidden) setNavHidden(!isShow)
@@ -233,8 +253,11 @@ export default function Header(props){
         <Container white={props.white} transparent={navHidden}>
             <motion.div variants={variants} initial="visible" animate={navHidden ? "hidden" : "visible"} className={`position-relative d-flex align-items-center ${props.full ? "full" : "container justify-content-between"}`}>
                 <div>
-                    <a href="/">
-                        <img src={`${props.white ? logoWhite : logoBlack}`} alt="Cubefarms" />
+                    <a href="/" >
+                        <h2>
+                        Spirited.ai
+                        </h2>
+                    
                     </a>
                 </div>
                 <div className="d-block d-lg-none">
@@ -324,10 +347,16 @@ export default function Header(props){
                             }
                             {item.button &&
                                 <div>
-                                    <div className="btn btn-arrow ml-3">
-                                        <SingleArrowButton>
-                                            {item.title}
-                                        </SingleArrowButton>
+                                    <div className="btn btn-arrow ml-3 text-white">
+                                    {token ? 
+              <div className="p-2" onClick={() => handleLogout()}>
+                Logout
+              </div>
+              :
+              <div className="p-2" onClick={() => handleSignIn()}>
+                Login with Google
+              </div>
+            }
                                     </div>
                                 </div>
                             }

@@ -11,6 +11,8 @@ import { PRIMARY, PRIMARY_DARK } from '../utils/Colors'
 import { FaQuoteLeft } from 'react-icons/fa'
 import Footer from '../components/Footer/Footer'
 import SingleArrowButton from '../components/Buttons/SingleArrowButton'
+import JoinUs from './JoinUs'
+import Contact from './Contact'
 
 const widths = {
     zero: { width: "0px", transition: {duration: 0.7, type: "tween" } },
@@ -179,7 +181,7 @@ export default function Outsource(){
                     <div className="bg-white py-4 px-2 py-lg-5" data-aos-id="white-bg">
                         <div className="row no-gutters align-items-center justify-content-between container-lg mx-auto p-0">
                             <div className="col-12 col-lg-6 p-2 text-muted font-14 heading">
-                                Cubefarms is a full stack digital agency working remotely with clients to provide compelling solutions through
+                                Spirited.ai is a full stack digital agency working remotely with clients to provide compelling solutions through
                             </div>
                             <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
                                 <div className="text-left" style={{minWidth: "340px"}}>         
@@ -324,7 +326,7 @@ export default function Outsource(){
                                     <span style={{color: PRIMARY_DARK}}>remote working culture</span>
                                 </div>
                                 <div className="py-3 py-lg-5 font-2 heading-thin">
-                                    Here at Cubefarms we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
+                                    Here at Spirited.AI we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
                                 </div>
                                 <div className="heading font-15">
                                     The future of work is here
@@ -350,10 +352,18 @@ export default function Outsource(){
                                     <FaQuoteLeft size="76" color={PRIMARY_DARK} />
                                 </div>
                                 <div className="py-3 py-lg-5 font-18">
-                                    Here at Cubefarms we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
+                                    Here at Spirited.AI we are making work from home a reality. All you need is laptop, Wi-Fi and sheer dedication towards your job
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <Transition key={6} height="" from="#f3f5fa" to="#f3f5fa" />
+                    <div className="">
+                        <JoinUs/>
+                    </div>
+                    <Transition key={7} height="" from="#f3f5fa" to="#f3f5fa" />
+                    <div className="">
+                        <Contact/>
                     </div>
                 </AnimatedBg>
             </div>

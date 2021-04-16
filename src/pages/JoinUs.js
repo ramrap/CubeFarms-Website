@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import JoinUsForm from '../components/JoinUsForm'
 import StepScroll from '../components/StepScroll'
 
+
 import { PRIMARY, PRIMARY_DARK } from '../utils/Colors'
 
 
@@ -59,7 +60,7 @@ export default function JoinUs(){
                 <div className="col-12 col-lg-6 hero px-2 px-md-5 py-5">
                     <div className="py-10 h-100 d-flex flex-column align-items-center justify-content-center">
                         <div className="subheading">Work someplace Awesome</div>
-                        <div className="heading">Work at Cubefarms</div>
+                        <div className="heading">Join Us at Spirited.ai</div>
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 form px-3 px-md-5 py-10 py-md-3 d-flex flex-column position-relative">
@@ -71,6 +72,7 @@ export default function JoinUs(){
                     </div>
                     <div className="w-100 joinusform h-100">
                         <JoinUsForm />
+
                     </div>
                 </div>
             </div>

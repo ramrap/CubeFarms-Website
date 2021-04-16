@@ -38,29 +38,17 @@ const HEADER_ITEMS = [
         ]
     },
     {
-        title: "CheckUps",
-        dropdown: true,
-        items: [
-            {
-                title: "CheckUp1",
-               
-                path: "/"
-            },
-            {
-                title: "CheckUp2",
-                
-                path: "/t"
-            },
-            
-        ]
+        title: "Upload Image",
+        path: "/upload"
+        
     },
     {
         title: "Join Us",
-        path: "/joinus"
+        path: "#JoinUs"
     },
     {
         title: "Contact",
-        path: "/contact"
+        path: "#contactUs"
     },
     {
         

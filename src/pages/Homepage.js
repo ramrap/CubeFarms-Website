@@ -86,7 +86,7 @@ export default function Outsource(){
     React.useEffect(() => {
         if(window){
             AOS.init({
-                duration: 1400,
+                duration: 500,
             })
             document.addEventListener("aos:in", ({ detail }) => {
                 console.log("white in", detail)
@@ -358,11 +358,11 @@ export default function Outsource(){
                         </div>
                     </div>
                     <Transition key={6} height="" from="#f3f5fa" to="#f3f5fa" />
-                    <div className="">
+                    <div className="" id="JoinUs">
                         <JoinUs/>
                     </div>
                     <Transition key={7} height="" from="#f3f5fa" to="#f3f5fa" />
-                    <div className="">
+                    <div className="" id="contactUs">
                         <Contact/>
                     </div>
                 </AnimatedBg>

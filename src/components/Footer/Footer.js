@@ -11,6 +11,9 @@ const Container = styled.div`
     color: ${props => props.black ? "white" : "black"};
     position: relative;
 
+    .footer{
+        max-height: 100px;
+    }
     img {
         max-height: 70px;
     }
@@ -44,11 +47,11 @@ const footerData = [
         content:[
             {
                 label: "About Us",
-                link: "/"
+                link: "/#aboutUs"
             },
             {
-                label: "our team",
-                link: "/"
+                label: "Our Team",
+                link: "/#team"
             },
             
         ]
@@ -86,7 +89,7 @@ const footerData = [
 export default function Footer(props){
     return(
         <Container black={props.black}>
-            <div className="row no-gutters py-5 container-lg mx-auto">
+            <div className="row no-gutters footer py-5 container-lg mx-auto">
                 <div className="col-12 col-md-4">
                     <div className="heading font-15">
                         <div>

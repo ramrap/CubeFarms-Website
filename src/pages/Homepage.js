@@ -176,22 +176,22 @@ export default function Outsource(){
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white py-4 px-2 py-lg-5" data-aos-id="white-bg">
+                    <div className="bg-white py-4 px-2 py-lg-5" data-aos-id="white-bg" >
                         <div className="row no-gutters align-items-center justify-content-between container-lg mx-auto p-0">
-                            <div className="col-12 col-lg-6 p-2 text-muted font-14 heading">
-                            A typical malaria diagnosis takes 2 hours
+                            <div className="col-12 col-lg-12 p-2  font-14 heading">
+                            A typical Malaria diagnosis takes 2 hours
                             <br/> For TB it is 3 hours
                             </div>
-                            <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
+                             {/* <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
                                 <div className="text-left" style={{minWidth: "340px"}}>         
-                                    <div>Strategy. Design.</div>
-                                    <div>Content. Technology.</div>
+                                    {/* <div>Strategy. Design.</div>
+                                    <div>Content. Technology.</div> 
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div>
-                        <div className="py-3 py-lg-5 px-3 px-lg-2 container-lg">
+                        <div className="py-3 py-lg-5 px-3 px-lg-2 container-lg" id="aboutUs">
                             <div className="font-21 heading text-white">
                                 Why choose Us?
                             </div>
@@ -368,7 +368,7 @@ numquam.
   
   
  
-  <div class="row">
+  <div class="row" id="team">
 
     
     <div class="col-lg-12 col-md-12 mb-lg-12 mb-5">

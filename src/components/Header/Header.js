@@ -24,7 +24,7 @@ const HEADER_ITEMS = [
     {
         title: "About",
        
-        path: "/"
+        path: "/#aboutUs"
     },
     {
         title: "Approach",
@@ -32,9 +32,9 @@ const HEADER_ITEMS = [
         path: "/"
     },
     {
-        title: "Outsource",
+        title: "Team",
        
-        path: "/"
+        path: "/#team"
     },
     {
         title: "Upload Image",

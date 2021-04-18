@@ -33,12 +33,12 @@ const Container = styled.div`
         font-size: 1.8rem;
     }
     .form {
-        
+        overflow: auto;  
         background: linear-gradient(to bottom,${PRIMARY}, ${PRIMARY_DARK})
     }
     @media(min-width: 992px){
         .outerContainer {
-            padding-top: 89px;
+            padding-top: 8px;
             height: calc(100%);
         }
         .outerContainer > div {
@@ -81,7 +81,7 @@ export default function JoinUs(){
                 </div>
             </div>
         </Container>
-        <Footer/>
+     
         </>
     )
 }

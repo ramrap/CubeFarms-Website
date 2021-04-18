@@ -190,7 +190,7 @@ export default function Outsource(){
                             <div className="row no-gutters align-items-center">
                                 <div className="col-12 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
                                 <div className="p-3 container-tt" style={{maxWidth: "300px"}}>
-                                    <h1 className="font-39 text-black" >
+                                    <h1 className="font-20 text-black" >
                                         Upload
                                         Image<br />
                                         
@@ -227,7 +227,7 @@ export default function Outsource(){
 
                 
             </Container>
-            <Footer/>
+            
         </Layout>
     )
 }

@@ -25,14 +25,12 @@ const Container = styled.div`
         background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center; 
-        background-image: url('https://st4.depositphotos.com/6664576/20110/v/1600/depositphotos_201109418-stock-illustration-medical-hospital-building.jpg');
-
+        background-image: url('https://as2.ftcdn.net/jpg/02/27/45/07/500_F_227450777_9R6LlPHheVigtIKCQ1HJrdriPTWhAuJ9.jpg');
     }
-    .container{
-        width: 30%;
-        background-color: #b8c6db;
-        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
-
+    .container-tt{
+ 
+        
+        
         border: 5px solid #F0F2F0;
        
     }
@@ -156,7 +154,7 @@ export default function Outsource(){
             <Container>
                 <div className="background-fade">
                     <AnimatedBg>
-                        <div className="hero-container" >
+                        {/* <div className="hero-container" >
                             <div className="container text-black">
                                 <div className="p-3" style={{maxWidth: "300px"}}>
                                     <h1 className="font-39" >
@@ -183,10 +181,51 @@ export default function Outsource(){
                                        </>}
                                     </div>
                             </div>
-                        </div>
+                        </div> */}
                         
                     </AnimatedBg>
                 </div>
+                <div className="mini-hero-container container-lg">
+                        <div className="py-3 py-lg-5">
+                            <div className="row no-gutters align-items-center">
+                                <div className="col-12 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
+                                <div className="p-3 container-tt" style={{maxWidth: "300px"}}>
+                                    <h1 className="font-39 text-black" >
+                                        Upload<br />
+                                        Image<br />
+                                        
+                                    </h1>
+                                    <div className="font-13" style={{ fontFamily: "madetommy-light"}}>
+                                       
+                                    </div>
+                                        <div className="p-2">
+                                        <input type="file" onChange={handleChange}/>
+                                        </div>
+                                       
+                                        <br/>
+                                        <button className=" btn btn-primary" onClick ={handleUpload}>Upload</button>
+ 
+
+                                </div>
+                                <div className="font-13 text-success p-2" style={{ fontFamily: "madetommy-light"}}>
+                                       {imageUpload?<>
+                                       Image Uploaded Succesfully!!
+                                       </>:<>
+                                       </>}
+                                    </div>
+                                    
+                                   
+                                </div>
+                                <div className="col-12 col-lg-6 p-3 order-1 order-lg-2">
+                                    <div className="d-flex align-items-center justify-content-center img-container">
+                                        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37655/mri-scan-clipart-md.png" alt="Creative Services" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
             </Container>
             <Footer/>
         </Layout>

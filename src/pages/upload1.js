@@ -188,7 +188,7 @@ export default function Outsource(){
                 <div className="mini-hero-container container-lg">
                         <div className="py-3 py-lg-5">
                             <div className="row no-gutters align-items-center">
-                                <div className="col-12 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
+                                <div className="col-sm-12 col-md-6 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
                                 <div className="p-3 container-tt" style={{maxWidth: "300px"}}>
                                     <h1 className="font-20 text-black" >
                                         Upload
@@ -216,9 +216,9 @@ export default function Outsource(){
                                     
                                    
                                 </div>
-                                <div className="col-12 col-lg-6 p-3 order-1 order-lg-2">
+                                <div className="col-sm-12 col-md-6 col-lg-6 p-3 order-1 order-lg-2">
                                     <div className="d-flex align-items-center justify-content-center img-container">
-                                        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37655/mri-scan-clipart-md.png" alt="Creative Services" />
+                                        <img src="/static/images-1.png" alt="Creative Services" />
                                     </div>
                                 </div>
                             </div>

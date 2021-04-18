@@ -20,13 +20,14 @@ const Container = styled.div`
         background-size: cover;
     }
     .subheading {
-        font-size: 1.3rem;
+        font-size: 0.4rem;
     }
     .heading {
         font-size: 2.5rem;
     }
-    .subheading, .heading {
+   .heading {
         font-weight: bold;
+
     }
     .subheadingWhite {
         color: white;
@@ -45,7 +46,7 @@ const Container = styled.div`
 
         }
         .subheading {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
         }
         .heading {
             font-size: 3.5rem;
@@ -60,11 +61,13 @@ export default function JoinUs(){
             <Header full={true} />
             <div className="row no-gutters outerContainer">
                 <div className="col-12 col-lg-6 hero px-2 px-md-5 py-5">
-                    <div className="py-10 h-100 d-flex flex-column align-items-center justify-content-center">
-                        <div className="heading">Be a part of <strong className="text-blue" style={{color:"#377eeb"}}>Spirited.ai</strong></div>
-                        <div className="subheadingBlack w-100 py-md-2">
+                    <div className="py-10 h-100 d-flex flex-column align-items-center justify-content-left">
+                        <div className="heading">Be a part of <strong className="text-blue" style={{color:"#377eeb"}}>Spirited.ai</strong>
+                        </div>
+                        <div className="subheading Black w-100 py-md-2 align-items-center justify-content-left">
                         We hire people with a broad set of technical skills who are ready to take on some of technology’s greatest challenges, make real-world impact, and learn cool stuff along the way.
                         </div>
+                        
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 form px-3 px-md-5 py-10 py-md-3 d-flex flex-column position-relative">

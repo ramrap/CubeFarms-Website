@@ -11,28 +11,27 @@ const Container = styled.div`
 
 export default function AboutUs() {
     return (
-        <Layout header={{full: true}}>
+        <>
             <Container>
-                <div className="hero-container">
+                <div className="pd-5 my-5" >
                     <div className="container">
-                        <div className="p-3" style={{maxWidth: "600px"}}>
-                            <h1 className="font-39 text-black" style={{fontFamily: "madetommy-light"}}>
+                        <div className="p-3" style={{maxWidth: "1000px",minHeight: "300px"}}>
+                            <h1 className="font-39 text-black py-5" style={{fontFamily: "madetommy-light"}}>
                                 Who are we?
                             </h1>
-                            <div className="font-13" style={{color: "rgba(0,0,0,0.83)", fontFamily: "madetommy-light"}}>
-                                We design and develop with a belief that every website deserves to 
-                                have its own voice. We build each and every website from scratch 
-                                combining function, content structure, and beauty in a single package.
+                            <div className="font-20" style={{color: "rgba(0,0,0,0.83)", fontFamily: "madetommy-light"}}>
+                            We are an IIT Delhi-based and supported start-up with a mandate to enhance efficiency and performance of the medical imaging sector.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="py-5 bg-black text-white text-center font-23" style={{fontFamily: "madetommy-bold"}}>
+          
+                {/* <div className="py-5 bg-black text-white text-center font-23" style={{fontFamily: "madetommy-bold"}}>
                     <div>
                         The extended team that is part of your team
                     </div>
-                </div>
-                <div className="mini-hero-container container-lg text-black">
+                </div> */}
+                {/* <div className="mini-hero-container container-lg text-black">
                     <div className="py-3 py-lg-5">
                         <div className="row no-gutters">
                             <div className="col-12 col-lg-6 p-3">
@@ -51,8 +50,8 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="inset-shadow">
+                </div> */}
+                {/* <div className="inset-shadow">
                     <div className="container-lg hero-container text-black">
                         <div className="w-100">
                             <div className="heading text-center font-24 pb-4">
@@ -74,8 +73,8 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="container-lg hero-container text-black">
+                </div> */}
+                {/* <div className="container-lg hero-container text-black">
                     <div className="w-100">
                         <div className="heading p-2 p-md-5 font-24 pb-4">
                             <div className="mb-2" style={{width: "120px", height: "8px", background: PRIMARY}}>
@@ -101,8 +100,8 @@ export default function AboutUs() {
                             )}
                         </div>
                     </div>
-                </div>
-                <div className="bg-black">
+                </div> */}
+                {/* <div className="bg-black">
                     <div className="container-lg hero-container">
                         <div className="w-100">
                             <div className="heading p-2 p-md-5 font-24 pb-4">
@@ -114,8 +113,8 @@ export default function AboutUs() {
                             
                         </div>
                     </div>
-                </div>
+                </div> */}
             </Container>
-        </Layout>
+        </>
     )
 }

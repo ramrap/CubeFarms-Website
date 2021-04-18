@@ -22,32 +22,34 @@ const HEADER_ITEMS = [
         
     },
     {
-        title: "About",
-       
-        path: "/#aboutUs"
-    },
-    {
-        title: "Approach",
-        
+        title: "Home",
         path: "/"
     },
+    {
+        title: "About Us",
+       
+        path: "/#whoarewe"
+    },
+    
     {
         title: "Team",
        
         path: "/#team"
     },
+   
+    
     {
-        title: "Upload Image",
-        path: "/upload"
-        
+        title: "Contact Us",
+        path: "/#contactUs"
     },
     {
         title: "Join Us",
         path: "/JoinUs"
     },
     {
-        title: "Contact",
-        path: "/#contactUs"
+        title: "Upload Image",
+        path: "/upload"
+        
     },
     {
         
@@ -100,7 +102,7 @@ const Container = styled.div`
     }
     .active {
         font-weight: bold;
-        color: ${PRIMARY}
+       
     }
     .full {
         width: 90vw;

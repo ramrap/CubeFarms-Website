@@ -24,14 +24,14 @@ function App() {
       <AuthProvider>
             <Switch>
             <Route path="/about" component={AboutUs} />
-            <Route path="/approach" component={Approach} />
-            <Route path="/outsource" component={OutSource} />
+            {/* <Route path="/approach" component={Approach} />
+            <Route path="/outsource" component={OutSource} /> */}
             <Route path="/joinus" component={JoinUs} />
-            <Route path="/contact" component={Contact} />
+            {/* <Route path="/contact" component={Contact} />
             <Route path="/web" component={Web} />
             <Route path="/product" component={Product} />
             <Route path="/advertising" component={Advertising} />
-            <Route path="/creative" component={Creative} />
+            <Route path="/creative" component={Creative} /> */}
             <Route path="/upload" component={Upload} />
             <Route path="/" component={Homepage} />
         </Switch>

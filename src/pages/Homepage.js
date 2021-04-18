@@ -13,6 +13,7 @@ import Footer from '../components/Footer/Footer'
 import SingleArrowButton from '../components/Buttons/SingleArrowButton'
 import JoinUs from './JoinUs'
 import Contact from './Contact'
+import AboutUs from '../pages/Company/AboutUs'
 
 const widths = {
     zero: { width: "0px", transition: {duration: 0.7, type: "tween" } },
@@ -60,6 +61,9 @@ const Container = styled.div`
     .home-heading-mobile {
         font-size: 2.7rem;
         font-family: "madetommy-light";
+    }
+    .heading-line{
+        color:White;
     }
     @media(max-width: 991px){
         .home-heading {
@@ -154,19 +158,19 @@ export default function Outsource(){
                         <div className="container">
                             <div className="p-3 heading d-block d-md-none">
                                 <h1 data-aos="fade-up" className="text-white home-heading-mobile">
-                                Simplify and optimize your diagnosis<br/> 
-                                powered by AI
-                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
+                                Simplify your diagnosis<br/> 
+                                <div className="home-span">powered by AI</div>
+                                    {/* <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
                                     <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Engineers</motion.div>
-                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div>
+                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div> */}
                                     {/* <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div> */}
-                                    <div className="home-span text-white">{" "}<Cursor /></div>
-                                    <div className="text-white">Team</div>
+                                    {/* <div className="home-span text-white">{" "}<Cursor /></div>
+                                    <div className="text-white">Team</div> */}
                                 </h1>
                             </div>
                             <div className="p-3 heading d-none d-md-block">
                                 <h1 data-aos="fade-up" className="text-white home-heading">
-                                Simplify and optimize your diagnosis<br/> 
+                                Simplify your diagnosis<br/> 
                                 
                                     <div className="home-span">powered by AI</div>
                                     
@@ -176,11 +180,11 @@ export default function Outsource(){
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white py-4 px-2 py-lg-5" data-aos-id="white-bg" >
-                        <div className="row no-gutters align-items-center justify-content-between container-lg mx-auto p-0">
-                            <div className="col-12 col-lg-12 p-2  font-14 heading">
+                    <div className="bg-black py-4 px-2 py-lg-5" data-aos-id="white-bg" >
+                        <div className="row no-gutters align-items-right justify-content-end  mx-auto p-0">
+                            <div className="col-md-6 p-5 mx-3  font-18 heading-line bg-black text-right">
                             A typical Malaria diagnosis takes 2 hours
-                            <br/> For TB it is 3 hours
+                            <br/> For Tuberculosis it takes 3 hours to complete
                             </div>
                              {/* <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
                                 <div className="text-left" style={{minWidth: "340px"}}>         
@@ -334,6 +338,15 @@ numquam.
                             </div>
                         </div>
                     </div>
+                    <Transition key={5} height="0px" from="#f3f5fa" to="#f3f5fa" />
+                    <div className="mini-hero-container-1 bg-white text-black pb-5" id="whoarewe">
+                        <div className=" py-lg-5 px-3 heading text-center">
+                            <div style={{maxWidth: "1000px"}}>
+                               <AboutUs/>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* <Transition key={5} height="50px" from="#ffffff" to="#f3f5fa" />
                     <div className="hero-container text-black culture-section">
                         <div className="py-3 py-lg-5 px-3 heading">
@@ -358,130 +371,78 @@ numquam.
                             </div>
                         </div>
                     </div> */}
-                    <Transition key={5} height="" from="#f3f5fa" to="#f3f5fa" />
+                    <Transition key={6} height="" from="#f3f5fa" to="#f3f5fa" />
                     <div className="" id="JoinUs">
                     
-<section class="team-section text-center my-5 d-flex p-2 row justify-content-md-center">
+<section class="team-section text-center d-flex pt-5 row justify-content-md-center">
 
-  
-  <h2 class="h1-responsive font-weight-bold my-5 col-lg-12">Our Team</h2>
+
+  <h2 class="h1-responsive font-weight-bold col-lg-12 py-5" id="team">Our Team</h2>
   
   
  
-  <div class="row" id="team">
+  <div class="row" >
 
     
-    <div class="col-lg-12 col-md-12 mb-lg-12 mb-5">
-      <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
-          alt="Sample avatar"/>
-      </div>
-      <h5 class="font-weight-bold mt-4 mb-3">Prof. Anup Singh</h5>
-      <p class="text-uppercase blue-text"><strong>Faculty Advisor</strong></p>
-      
-      <ul class="list-unstyled mb-0">
-        
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-        
-        <a class="p-2 fa-lg tw-ic">
-          <i class="fab fa-twitter blue-text"> </i>
-        </a>
-        
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-instagram blue-text"> </i>
-        </a>
-      </ul>
-    </div>
+    
     
 
     
     <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 ">
       <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
+        <img src="/static/suraj.jpeg" class="rounded-circle z-depth-1" height="250px"
           alt="Sample avatar"/>
       </div>
       <h5 class="font-weight-bold mt-4 mb-3">Suraj Punia</h5>
       <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
       
-      <ul class="list-unstyled mb-0">
-        
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-        
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-instagram blue-text"> </i>
-        </a>
-      </ul>
+     
     </div>
     
 
     
     <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
       <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1"
+        <img src="/static/akash.jpeg" class="rounded-circle z-depth-1" height="250px"
           alt="Sample avatar"/>
       </div>
       <h5 class="font-weight-bold mt-4 mb-3">Akash Sharma</h5>
       <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
      
-      <ul class="list-unstyled mb-0">
-        
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-       
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-instagram blue-text"> </i>
-        </a>
-       
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-dribbble blue-text"> </i>
-        </a>
-      </ul>
+     
     </div>
     
 
     
     <div class="col-lg-3 col-md-6">
       <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+        <img src="/static/devashish.jpeg" class="rounded-circle z-depth-1" height="250px" 
           alt="Sample avatar"/>
       </div>
       <h5 class="font-weight-bold mt-4 mb-3">Devashish Pardesi</h5>
       <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
      
-      <ul class="list-unstyled mb-0">
-       
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-       
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-github blue-text"> </i>
-        </a>
-      </ul>
+     
     </div>
     <div class="col-lg-3 col-md-6">
       <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+        <img src="/static/ritik.jpeg" class="rounded-circle z-depth-1" height="250px"
           alt="Sample avatar"/>
       </div>
       <h5 class="font-weight-bold mt-4 mb-3">Ritik Choudhary</h5>
       <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
      
-      <ul class="list-unstyled mb-0">
-       
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-       
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-github blue-text"> </i>
-        </a>
-      </ul>
+      
+    </div>
+    <div class="col-lg-12 col-md-12 mb-lg-12 my-5">
+      <div class="avatar mx-auto">
+        <img src="/static/anupsm.jpeg" class="rounded-circle z-depth-1" height="250px"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Prof. Anup Singh</h5>
+      <p class="text-uppercase blue-text"><strong>Faculty Advisor</strong></p>
+      
+     
     </div>
     
 

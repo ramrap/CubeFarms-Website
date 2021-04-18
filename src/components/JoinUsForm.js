@@ -81,7 +81,7 @@ function Step2(props){
                     </div>
                 </div>
                 <div className="py-2 py-md-4">
-                    <div className="font-2">How would you like to associate with Cubefarms...</div>
+                    <div className="font-2">How would you like to associate with Spirited.ai?</div>
                     <div className="py-2 py-md-4 d-flex flex-wrap">
                         <TagRadio name="association" id="fullTime" label={`Full Time`} />
                         <TagRadio name="association" id="partTime" label={`Part Time`} />
@@ -182,7 +182,7 @@ function Step5(props){
                     <textarea className="form-control mt-2" type="text" rows="6" />
                 </div>
                 <div className="font-14 py-2 py-md-4">
-                    Where did you hear about Cubefarms.... <br />
+                    Where did you hear about Spirited.ai.... <br />
                     <textarea className="form-control mt-2" type="text" rows="6" />
                 </div>
             </div>
@@ -203,7 +203,7 @@ function Step6(props){
         <div className="text-white h-100 d-flex flex-column justify-content-center">
             <div className="pt-5 pb-10">
                 <div className="font-14 py-2 py-md-4">
-                    Almost there kk! Now do you have any questions for us? <br />
+                    Almost there! Now do you have any questions for us? <br />
                     <textarea className="form-control mt-2" type="text" rows="8" />
                 </div>
             </div>

@@ -47,7 +47,7 @@ const footerData = [
         content:[
             {
                 label: "About Us",
-                link: "/#aboutUs"
+                link: "/#whoarewe"
             },
             {
                 label: "Our Team",
@@ -125,7 +125,7 @@ export default function Footer(props){
                 <div className="col-12 col-md-6 p-4 text-center text-md-left">
                     {/* All Rights Reserved All Wrong Reserved */}
                 </div>
-                <div className="col-12 col-md-6 p-4 text-center text-md-right">
+                <div className="col-lg-6 p-4 text-center text-md-right">
                     <div className="social-container p-2">
                         <div className="d-flex justify-content-end">
                             <a href="" className="social-item">
@@ -145,11 +145,13 @@ export default function Footer(props){
                             </a>
                         </div>
                     </div>
-                    Connect with us <br/>
-                    support@spirited.ai
-                    {/* 2020-travostel hospitality private limited<br />
-                    <span className="heading-bold">Proudly Made in India</span> */}
+                    
+                    
+                    
+
                 </div>
+               
+                
             </div>
         </Container>
     )

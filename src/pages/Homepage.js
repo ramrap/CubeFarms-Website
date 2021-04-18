@@ -364,7 +364,7 @@ numquam.
 <section class="team-section text-center my-5 d-flex p-2 row justify-content-md-center">
 
   
-  <h2 class="h1-responsive font-weight-bold my-5 col-lg-12">Our team</h2>
+  <h2 class="h1-responsive font-weight-bold my-5 col-lg-12">Our Team</h2>
   
   
  

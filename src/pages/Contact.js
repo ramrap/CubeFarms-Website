@@ -22,10 +22,11 @@ export default function Contact() {
                                     Contact Us
                                 </h1>
                                 <p className="mb-4">
-                                    Let'a talk about your idea - fill the form on the right and we will get back to you shortly. We can't wait working with you!
+                                Write to us today to know more about our business and how we can help you grow your business.
+
                                 </p>
                                 <p>
-                                    Or drop us a line at - contact@cubefarms.com
+                                Drop us a line at - support@spirited.ai
                                 </p>
                             </div>
                         </div>
@@ -52,7 +53,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-black py-5">
+                {/* <div className="bg-black py-5">
                     <div className="mini-hero-container container-lg">
                         <div class="w-100">
                             <h1 className="heading-bold mb-5">
@@ -101,6 +102,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
+             */}
             </Container>
  
     )

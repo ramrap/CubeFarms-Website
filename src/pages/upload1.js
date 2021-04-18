@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useAuth } from "../context/auth";
 import { loadFirebase } from "../context/firebase";
 import { useState } from 'react';
+import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import WhyChooseUs from '../components/OutSource/WhyChooseUs'
 import OurStandards from '../components/OutSource/OurStandards'
@@ -17,6 +18,23 @@ import Layout from '../components/UI/Layout'
 const Container = styled.div`
     .heading {
         font-size: 2.6rem;
+    }
+    .hero-container {
+        height: "400px";
+        width: "80%";
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+        background-image: url('https://st4.depositphotos.com/6664576/20110/v/1600/depositphotos_201109418-stock-illustration-medical-hospital-building.jpg');
+
+    }
+    .container{
+        width: 30%;
+        background-color: #b8c6db;
+        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+
+        border: 5px solid #F0F2F0;
+       
     }
 `
 const whyChooseUsData = [
@@ -138,10 +156,10 @@ export default function Outsource(){
             <Container>
                 <div className="background-fade">
                     <AnimatedBg>
-                        <div className="hero-container">
+                        <div className="hero-container" >
                             <div className="container text-black">
-                                <div className="p-3" style={{maxWidth: "600px"}}>
-                                    <h1 className="font-39">
+                                <div className="p-3" style={{maxWidth: "300px"}}>
+                                    <h1 className="font-39" >
                                         Upload<br />
                                         Image<br />
                                         
@@ -170,6 +188,7 @@ export default function Outsource(){
                     </AnimatedBg>
                 </div>
             </Container>
+            <Footer/>
         </Layout>
     )
 }

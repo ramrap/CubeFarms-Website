@@ -154,9 +154,8 @@ export default function Outsource(){
                         <div className="container">
                             <div className="p-3 heading d-block d-md-none">
                                 <h1 data-aos="fade-up" className="text-white home-heading-mobile">
-                                    We are<br />
-                                    your <br />
-                                    on Demand<br />
+                                Simplify and optimize your diagnosis<br/> 
+                                powered by AI
                                     <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
                                     <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Engineers</motion.div>
                                     <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div>
@@ -167,13 +166,12 @@ export default function Outsource(){
                             </div>
                             <div className="p-3 heading d-none d-md-block">
                                 <h1 data-aos="fade-up" className="text-white home-heading">
-                                    We are<br />
-                                    your on Demand<br />
-                                    <motion.div animate={web} variants={widths} initial={"zero"} className="home-span">Doctors</motion.div>
-                                    <motion.div animate={product} variants={widths} initial={"zero"} className="home-span">Engineers</motion.div>
-                                    <motion.div animate={creative} variants={widths} initial={"zero"} className="home-span">Scientists</motion.div>
+                                Simplify and optimize your diagnosis<br/> 
+                                
+                                    <div className="home-span">powered by AI</div>
+                                    
                                     {/* <motion.div animate={advertising} variants={widths} initial={"zero"} className="home-span">Advertising</motion.div> */}
-                                    <div className="home-span text-white">{" "}<Cursor />Team</div>
+                                    
                                 </h1>
                             </div>
                         </div>
@@ -181,7 +179,8 @@ export default function Outsource(){
                     <div className="bg-white py-4 px-2 py-lg-5" data-aos-id="white-bg">
                         <div className="row no-gutters align-items-center justify-content-between container-lg mx-auto p-0">
                             <div className="col-12 col-lg-6 p-2 text-muted font-14 heading">
-                                Spirited.ai is a full stack digital agency working remotely with clients to provide compelling solutions through
+                            A typical malaria diagnosis takes 2 hours
+                            <br/> For TB it is 2 hours
                             </div>
                             <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
                                 <div className="text-left" style={{minWidth: "340px"}}>         
@@ -202,13 +201,11 @@ export default function Outsource(){
                         <div className="py-3 py-lg-5">
                             <div className="row no-gutters align-items-center">
                                 <div className="col-12 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
-                                    <div data-aos="fade-right" className="heading font-32">
-                                        Product design
-                                    </div>
+                                    
                                     <div data-aos="fade-right" data-aos-delay={400} className="heading-thin font-18 text-muted py-3">
-                                        We work with startups and brands to create amazing CNN Models,  prototypes and custom apps. Pair with our expert product designers for a user centric Result.
+                                    Free up 98% of your diagnosis time with our cutting-edge AI powered medical aid
                                     </div>
-                                    <div data-aos="fade-right" data-aos-delay={800} className="text-muted">
+                                    {/* <div data-aos="fade-right" data-aos-delay={800} className="text-muted">
                                         <div className="grey-dash"></div> Corporate Design, Logo Design, Professional Motion Graphics, Product label Design
                                     </div>
                                     <div data-aos="fade-right" data-aos-delay={1200} className="py-3 py-lg-5">
@@ -217,7 +214,7 @@ export default function Outsource(){
                                                 Explore
                                             </SingleArrowButton>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="col-12 col-lg-6 p-3 order-1 order-lg-2">
                                     <div className="d-flex align-items-center justify-content-center img-container">
@@ -298,26 +295,46 @@ export default function Outsource(){
                                 </div>
                                 <div className="col-12 col-lg-6 p-3 px-lg-0">
                                     <div data-aos="fade-left" className="heading font-32">
-                                        Creative Services
+                                    TB Detection Tool
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay={400} className="heading-thin font-18 text-muted py-3">
-                                        Good design is good business. Out team of expert creative directors deliver high end designs which complement your brand, product and services.
+                                    Our tool provides {'>'}98% accuracy and 0%* false negative rate.
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay={800} className="text-muted">
-                                        <div className="grey-dash"></div> Corporate Design, Logo Design, Professional Motion Graphics, Product label Design
+                                        <div className="grey-dash"></div> *Excluding exceptional/non conventional cases.
+remove the explore button
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay={1200} className="py-3 py-lg-5">
                                         <div>
-                                            <SingleArrowButton white>
+                                            {/* <SingleArrowButton white>
                                                 Explore
-                                            </SingleArrowButton>
+                                            </SingleArrowButton> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <Transition key={4} height="50px" from="#ffffff" to="#f3f5fa" />
+                    <Transition key={4} height="100px" from="#f3f5fa" to="#f3f5fa" />
+                    <div className="mini-hero-container bg-black text-white">
+                        <div className="py-3 py-lg-5 px-3 heading text-center">
+                            <div style={{maxWidth: "1000px"}}>
+                                <div className="font-3 heading-bold">
+                                    Our client stories
+                                </div>
+                                <div className="py-3 py-lg-5">
+                                    <FaQuoteLeft size="76" color={PRIMARY_DARK} />
+                                </div>
+                                <div className="py-3 py-lg-5 font-18">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br/> Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <Transition key={5} height="50px" from="#ffffff" to="#f3f5fa" />
                     <div className="hero-container text-black culture-section">
                         <div className="py-3 py-lg-5 px-3 heading">
                             <div style={{maxWidth: "1000px"}}>
@@ -340,28 +357,147 @@ export default function Outsource(){
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <Transition key={5} height="100px" from="#f3f5fa" to="#f3f5fa" />
-                    <div className="mini-hero-container bg-black text-white">
-                        <div className="py-3 py-lg-5 px-3 heading text-center">
-                            <div style={{maxWidth: "1000px"}}>
-                                <div className="font-3 heading-bold">
-                                    Our client stories
-                                </div>
-                                <div className="py-3 py-lg-5">
-                                    <FaQuoteLeft size="76" color={PRIMARY_DARK} />
-                                </div>
-                                <div className="py-3 py-lg-5 font-18">
-                                    Here at Spirited.AI we are providing results at Home. All you need is Internet and report is in your hand
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <Transition key={6} height="" from="#f3f5fa" to="#f3f5fa" />
+                    </div> */}
+                    <Transition key={5} height="" from="#f3f5fa" to="#f3f5fa" />
                     <div className="" id="JoinUs">
-                        <JoinUs/>
+                    
+<section class="team-section text-center my-5 d-flex p-2 row justify-content-md-center">
+
+  
+  <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
+  
+  <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+    eum porro a pariatur veniam.</p>
+
+ 
+  <div class="row">
+
+    
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Prof. Anup Singh</h5>
+      <p class="text-uppercase blue-text"><strong>Faculty Advisor</strong></p>
+      
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fab fa-facebook-f blue-text"> </i>
+        </a>
+        
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fab fa-twitter blue-text"> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-instagram blue-text"> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+    
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 ">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Suraj Punia</h5>
+      <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
+      
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fab fa-facebook-f blue-text"> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-instagram blue-text"> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+    
+    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Akash Sharma</h5>
+      <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
+     
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fab fa-facebook-f blue-text"> </i>
+        </a>
+       
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-instagram blue-text"> </i>
+        </a>
+       
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-dribbble blue-text"> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+    
+    <div class="col-lg-3 col-md-6">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Devashish Pardesi</h5>
+      <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
+     
+      <ul class="list-unstyled mb-0">
+       
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fab fa-facebook-f blue-text"> </i>
+        </a>
+       
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-github blue-text"> </i>
+        </a>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar"/>
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Ritik Choudhary</h5>
+      <p class="text-uppercase blue-text"><strong>Core Team Member</strong></p>
+     
+      <ul class="list-unstyled mb-0">
+       
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fab fa-facebook-f blue-text"> </i>
+        </a>
+       
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fab fa-github blue-text"> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+  </div>
+  
+
+</section>
+
+                        
                     </div>
-                    <Transition key={7} height="" from="#f3f5fa" to="#f3f5fa" />
+                   
+                    
+                    <Transition key={5} height="" from="#f3f5fa" to="#f3f5fa" />
                     <div className="" id="contactUs">
                         <Contact/>
                     </div>

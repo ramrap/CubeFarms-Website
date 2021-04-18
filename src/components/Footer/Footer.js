@@ -47,13 +47,10 @@ const footerData = [
                 link: "/"
             },
             {
-                label: "Approach",
+                label: "our team",
                 link: "/"
             },
-            {
-                label: "Outsource",
-                link: "/"
-            },
+            
         ]
     },
     {
@@ -76,12 +73,12 @@ const footerData = [
     },
     {
         title: "Join Us",
-        link: "#JoinUs",
+        link: "/JoinUs",
         content:[]
     },
     {
         title: "Contact",
-        link: "#contactUs",
+        link: "/#contactUs",
         content:[]
     },
 ]
@@ -130,7 +127,7 @@ export default function Footer(props){
             </div>
             <div className="row no-gutters pb-5 py-md-5 px-2 px-md-5 align-items-end">
                 <div className="col-12 col-md-6 p-4 text-center text-md-left">
-                    All Rights Reserved All Wrong Reserved
+                    {/* All Rights Reserved All Wrong Reserved */}
                 </div>
                 <div className="col-12 col-md-6 p-4 text-center text-md-right">
                     <div className="social-container p-2">
@@ -152,8 +149,10 @@ export default function Footer(props){
                             </a>
                         </div>
                     </div>
-                    2020-travostel hospitality private limited<br />
-                    <span className="heading-bold">Proudly Made in India</span>
+                    Connect with us <br/>
+                    support@spirited.ai
+                    {/* 2020-travostel hospitality private limited<br />
+                    <span className="heading-bold">Proudly Made in India</span> */}
                 </div>
             </div>
         </Container>

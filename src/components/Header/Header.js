@@ -44,11 +44,11 @@ const HEADER_ITEMS = [
     },
     {
         title: "Join Us",
-        path: "#JoinUs"
+        path: "/JoinUs"
     },
     {
         title: "Contact",
-        path: "#contactUs"
+        path: "/#contactUs"
     },
     {
         

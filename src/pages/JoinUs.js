@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Header from '../components/Header/Header'
 import JoinUsForm from '../components/JoinUsForm'
 import StepScroll from '../components/StepScroll'
+import Footer from '../components/Footer/Footer'
 
 
 import { PRIMARY, PRIMARY_DARK } from '../utils/Colors'
@@ -54,18 +55,21 @@ const Container = styled.div`
 
 export default function JoinUs(){
     return (
+        <>
         <Container>
             <Header full={true} />
             <div className="row no-gutters outerContainer">
                 <div className="col-12 col-lg-6 hero px-2 px-md-5 py-5">
                     <div className="py-10 h-100 d-flex flex-column align-items-center justify-content-center">
-                        <div className="subheading">Work someplace Awesome</div>
-                        <div className="heading">Join Us at Spirited.ai</div>
+                        <div className="heading">Be a part of <p className="text-blue" style={{color:"#377eeb"}}>Spirited.ai</p></div>
+                        <div className="subheadingBlack w-100 py-md-2">
+                        We hire people with a broad set of technical skills who are ready to take on some of technology’s greatest challenges, make real-world impact, and learn cool stuff along the way.
+                        </div>
                     </div>
                 </div>
                 <div className="col-12 col-lg-6 form px-3 px-md-5 py-10 py-md-3 d-flex flex-column position-relative">
                     <div className="subheadingWhite w-100 py-md-2">
-                        Let's get to know you!
+                    
                     </div>
                     <div className="subheadingWhite w-100">
                         <StepScroll />
@@ -77,5 +81,7 @@ export default function JoinUs(){
                 </div>
             </div>
         </Container>
+        <Footer/>
+        </>
     )
 }

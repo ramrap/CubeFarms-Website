@@ -18,24 +18,23 @@ const logoBlack = '/static/logoBlack.png'
 const HEADER_ITEMS = [
     {
         title: "Company",
-        dropdown: true,
-        items: [
-            {
-                title: "About",
-               
-                path: "/"
-            },
-            {
-                title: "Approach",
-                
-                path: "/"
-            },
-            {
-                title: "Outsource",
-               
-                path: "/"
-            }
-        ]
+        
+        
+    },
+    {
+        title: "About",
+       
+        path: "/"
+    },
+    {
+        title: "Approach",
+        
+        path: "/"
+    },
+    {
+        title: "Outsource",
+       
+        path: "/"
     },
     {
         title: "Upload Image",

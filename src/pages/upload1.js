@@ -191,7 +191,7 @@ export default function Outsource(){
                                 <div className="col-12 col-lg-6 p-3 px-lg-0 order-2 order-lg-1">
                                 <div className="p-3 container-tt" style={{maxWidth: "300px"}}>
                                     <h1 className="font-39 text-black" >
-                                        Upload<br />
+                                        Upload
                                         Image<br />
                                         
                                     </h1>

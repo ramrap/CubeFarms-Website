@@ -90,16 +90,9 @@ export default function Footer(props){
                 <div className="col-12 col-md-4">
                     <div className="heading font-15">
                         <div>
-                            <h2>Spirited.ai</h2>
+                            <h2 style={{color:"0a3f92"}}>Spirited.ai</h2>
                         </div>
-                        <div>
-                            Got a new idea? Let's talk
-                        </div>
-                        <div className="py-3">
-                            <SingleArrowButton>
-                                Let's Talk
-                            </SingleArrowButton>
-                        </div>
+                        
                     </div>
                 </div>
                 { footerData.map((item, index) =>

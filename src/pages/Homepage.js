@@ -180,7 +180,7 @@ export default function Outsource(){
                         <div className="row no-gutters align-items-center justify-content-between container-lg mx-auto p-0">
                             <div className="col-12 col-lg-6 p-2 text-muted font-14 heading">
                             A typical malaria diagnosis takes 2 hours
-                            <br/> For TB it is 2 hours
+                            <br/> For TB it is 3 hours
                             </div>
                             <div className="col-12 col-lg-5 p-2 d-flex justify-content-center heading-bold font-27" style={{color: PRIMARY}}>
                                 <div className="text-left" style={{minWidth: "340px"}}>         
@@ -364,17 +364,14 @@ numquam.
 <section class="team-section text-center my-5 d-flex p-2 row justify-content-md-center">
 
   
-  <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
+  <h2 class="h1-responsive font-weight-bold my-5 col-lg-12">Our team</h2>
   
-  <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-    eum porro a pariatur veniam.</p>
-
+  
  
   <div class="row">
 
     
-    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+    <div class="col-lg-12 col-md-12 mb-lg-12 mb-5">
       <div class="avatar mx-auto">
         <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
           alt="Sample avatar"/>

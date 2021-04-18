@@ -60,7 +60,7 @@ const footerData = [
         title: "Services",
         content:[
             {
-                label: "Upload Imgage For Test Results",
+                label: "Upload Image For Test Results",
                 link: "/upload"
             },
             {

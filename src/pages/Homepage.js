@@ -302,7 +302,7 @@ export default function Outsource(){
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay={800} className="text-muted">
                                         <div className="grey-dash"></div> *Excluding exceptional/non conventional cases.
-remove the explore button
+
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay={1200} className="py-3 py-lg-5">
                                         <div>

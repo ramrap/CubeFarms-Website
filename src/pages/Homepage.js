@@ -222,7 +222,7 @@ export default function Outsource(){
                                 </div>
                                 <div className="col-12 col-lg-6 p-3 order-1 order-lg-2">
                                     <div className="d-flex align-items-center justify-content-center img-container">
-                                        <img src="/static/homepage/product.png" alt="Creative Services" />
+                                        <img src="/static/HP1.jpeg" alt="Creative Services" />
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@ export default function Outsource(){
                             <div className="row no-gutters align-items-center">
                                 <div className="col-12 col-lg-6 p-3">
                                     <div className="d-flex align-items-center justify-content-center img-container">
-                                        <img src="/static/homepage/creative.png" alt="Creative Services" />
+                                        <img src="/static/HP2.jpeg" alt="Creative Services" />
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6 p-3 px-lg-0">
